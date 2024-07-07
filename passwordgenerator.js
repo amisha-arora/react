@@ -1,13 +1,13 @@
 import { useCallback, useState, useEffect,useRef } from 'react';
 import './App.css';
 
-function App() {
+function App() { // it is used to initialise the following parameters
   const [length, setLength] = useState(8);
   const [numberAllowed, setNumberAllowed] = useState(false);
   const [charAllowed, setCharAllowed] = useState(false);
   const [password, setPassword] = useState('');
-  const passwordRef=useRef(null)
-  const passwordGenerator = useCallback(() => {
+  const passwordRef=useRef(null)// this method is used reference a value that’s not needed for rendering.
+  const passwordGenerator = useCallback(() => { //it lets you cache a function definition between re-renders.
     let pass = '';
     let str = 'ABCDEFGHIJKLOMNPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
     if (numberAllowed) str += '123456789';
@@ -28,7 +28,7 @@ function App() {
   }, [length, numberAllowed, charAllowed, passwordGenerator]);// use effect is used if there is any change in any of them(dependencies) and when the webpage is loaded for the first time
 
   return (
-    <>
+    <> //basic tailwind
       <div className='w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8 text-orange-500 bg-gray-600'>
         <h1 className='text-white text-center my-3'>Password Generator</h1>
         <div className="flex shadow rounded-lg overflow-hidden mb-4">
