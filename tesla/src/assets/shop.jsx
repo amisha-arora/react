@@ -17,7 +17,7 @@ function Shop() {
             <li className="cursor-pointer">Energy</li>
             <li className="cursor-pointer">Charging</li>
             <li className="cursor-pointer">Discover</li>
-            <li className="cursor-pointer">Shop</li> 
+            <li className="cursor-pointer bg-gray-100 text-black rounded font-semibold w-[82px] text-center h-[30px]">Shop</li> 
           </ul>
           <div className="md:flex hidden space-x-6 items-center">
             <img
@@ -66,16 +66,6 @@ function Shop() {
             <img className="w-44 h-54" src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Shop-Lifestyle.png" />
             <p className="font-semibold" style={{ marginLeft: '60px' }}>Lifestyle</p>
           </div>
-        </div>
-      </div>
-
-      {/* Buttons */}
-      <div className="absolute top-[620px] left-1/2 transform -translate-x-1/2 flex gap-16">
-        <div className="bg-white text-black px-14 py-2 rounded font-bold w-[324px] text-center">
-          Order Now
-        </div>
-        <div className="bg-black text-white px-14 py-2 rounded font-bold w-[324px] text-center">
-          Demo Drive
         </div>
       </div>
     </>
